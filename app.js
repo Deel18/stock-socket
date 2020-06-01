@@ -12,20 +12,27 @@ var simulatePrice = function(price) {
 
     price += chance/10;
 
-    return price;
+    roundedPrice = Math.round(price * 100) / 100
+
+    return roundedPrice;
 }
 
 var stock1 = {
     name: "stock1",
-    price: 1
+    price: 10.5
 }
 
 var stock2 = {
     name: "stock2",
-    price: 2
+    price: 11
 }
 
-var stocks = [stock1, stock2];
+var stock3 = {
+    name: "stock3",
+    price: 10.3
+}
+
+var stocks = [stock1, stock2, stock3];
 
 io.on("connection", function(socket) {
     console.info("User connected");
