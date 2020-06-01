@@ -1,0 +1,5 @@
+#  Project Stock-Socket 
+
+I chose to work with Express and socket.io in order to emulate the varying prices of a busy stock market.
+When the user goes to the stock market in the front-end, it will connect to the socket server, the server is setup
+to emit a new message every 5 seconds containing the prices of various stocks. It uses a simple way to calculate and emulate the variations in price of stock before sending it to the front end, where it is presented to the user. I forgot that there was an example repo of how you could emulate the price through using a Wiener-process, so I kind of ended up creating my own way. Overall, I think the technologies work well together and they complement eachother nicely. I did not think you would be able to combine in this kind of way to emulate the stock market so I found it very interesting.
